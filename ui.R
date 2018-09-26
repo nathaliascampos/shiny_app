@@ -4,6 +4,7 @@ library(shinydashboardPlus)
 library(dashboardthemes)
 library(shinyWidgets)
 library(plotly)
+library(chartist)
 
 source("themes.R")
 
@@ -33,23 +34,33 @@ body <- dashboardBody(
             fluidRow(
 
                 box(width = 12,
-                    p("Graph 1"), 
+                    p("Plotly - Graph 1"), 
                     plotlyOutput("graph1")
                 ),
                 
                 box(width = 4, 
-                    p("Graph 2", color = "black"), 
+                    p("Plotly - Graph 2", color = "black"), 
                     plotlyOutput("graph2")
                 ),
                 
                 box(width = 4,
-                    p("Graph 2"), 
+                    p("Plotly - Graph 2"), 
                     plotlyOutput("graph3")
                 ),
                 
                 box(width = 4,
-                    p("Graph 2"), 
+                    p("Plotly - Graph 2"), 
                     plotlyOutput("graph4")
+                ),
+                
+                box(width = 6, 
+                    p("Chartist - Bar"), 
+                    chartistOutput("chartist1")
+                ),
+                
+                box(width = 6, 
+                    p("Chartist - Line"), 
+                    chartistOutput("chartist2")
                 )
             )
         ),
