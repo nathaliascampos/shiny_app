@@ -13,7 +13,7 @@ Em breve este aplicativo está disponível na web.
 Para instalar, é necessário rodar: 
 ```install.packages("nome_da_biblioteca")```
 
-### Instalar: 
+#### Instalar: 
 
 * shiny
 * shinydashboard
@@ -21,3 +21,16 @@ Para instalar, é necessário rodar:
 * dashboardthemes
 * shinyWidgets
 * plotly
+* chartist
+
+-------------------------
+
+### Tipos de gráficos: 
+
+* Plotly
+
+https://plot.ly/r/
+
+* Chartist
+
+https://rdrr.io/github/yutannihilation/chartist/
