@@ -98,6 +98,68 @@ server <- function(input, output) {
                  responsiveQuery = "screen and (max-width: 600px)")
     })
     
+    output$chartist3 <- renderChartist({
+        set.seed(324)
+        data <- data.frame(
+            day = 1:20,
+            A   = runif(20, 0, 10),
+            B   = runif(20, 0, 10),
+            C   = runif(20, 0, 10),
+            D   = runif(20, 0, 10)
+        )
+        
+        # Only first data series is used for Pie(). So, these two draw the same chart.
+        interp <- JS_interp(prefix = "Item ")
+        chartist(data, day) + Pie(labelInterpolationFnc = interp)
+        chartist(subset(data, ,1), day) + Pie(labelInterpolationFnc = interp)
+        
+        # responsive chart
+        chartist(data[1:4, ], day) +
+            # by default, draw a donut chart
+            Pie(donut = TRUE, donutWidth = 100) +
+            # for smaller screens, draw a normal pie chart
+            Pie(donut = FALSE, showLabel = FALSE, responsiveQuery = "screen and (max-width: 600px)")
+        
+        # By default, Chartist knows only four colours
+        # (c.f. https://github.com/gionkunz/chartist-js/issues/79)
+        # Corrently Pie() cannot work well with data whose length is more than four
+        chartist(data, day) + Pie()
+    })
+    
+    output$chartist4 <- renderChartist({
+        set.seed(324)
+        data <- data.frame(
+            day = paste0("day", 1:20),
+            A   = runif(10, 0, 20),
+            B   = runif(10, 0, 20),
+            C   = runif(10, 0, 20),
+            D   = runif(10, 0, 20),
+            E   = runif(10, 0, 20),
+            stringsAsFactors = FALSE
+        )
+        
+        # a simple example
+        chartist(data, day) + Point() +
+            SVG_animate(target = "point", offset = -30, style = "x1")
+        
+        # `offset` is used as the absolute value when
+        #   1) relative = FALSE
+        #   2) style = "opacity"
+        chartist(data, day) +
+            SVG_animate(target = "line", offset = 0, style = "opacity")
+        
+        # If you want to animate things sequentially, you can use `delay` parameter.
+        chartist(data, day) +
+            SVG_animate(target = "line", style = "opacity", offset = 0, delay = 300)
+        
+        # You can even overlay animations.
+        chartist(data, day) + 
+            Point() +
+            SVG_animate(target = "point", style = "x1", offset = -100, delay = 5) +
+            SVG_animate(target = "point", style = "y1", offset = 100, delay = 3) +
+            SVG_animate(target = "point", style = "opacity", offset = 0, delay = 5)
+    })
+    
     # Others Graphs ---------
     
     # Outro

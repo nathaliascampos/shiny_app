@@ -15,6 +15,9 @@ sidebar <- dashboardSidebar(
     includeCSS("style.css"),
     
     sidebarMenu(
+        br(),
+        p("Nathália Campos",  align = "center"),
+        hr(),
         menuItem("Dashboard", tabName = "dashboard", icon = icon("home")),
         menuItem("Graphs", tabName = "graph", icon = icon("far fa-area-chart")),
         menuItem("Box", tabName = "box", icon = icon("far fa-folder-open")),
@@ -34,34 +37,45 @@ body <- dashboardBody(
             fluidRow(
 
                 box(width = 12,
-                    p("Plotly - Graph 1"), 
-                    plotlyOutput("graph1")
+                    p("Plotly - Line"), 
+                    plotlyOutput("graph1", height = "200px")
                 ),
                 
                 box(width = 4, 
-                    p("Plotly - Graph 2", color = "black"), 
-                    plotlyOutput("graph2")
+                    p("Plotly - Bar", color = "black"), 
+                    plotlyOutput("graph2", height = "200px")
                 ),
                 
                 box(width = 4,
-                    p("Plotly - Graph 2"), 
-                    plotlyOutput("graph3")
+                    p("Plotly - Bar"), 
+                    plotlyOutput("graph3", height = "200px")
                 ),
                 
                 box(width = 4,
-                    p("Plotly - Graph 2"), 
-                    plotlyOutput("graph4")
+                    p("Plotly - Bar"), 
+                    plotlyOutput("graph4", height = "200px")
                 ),
                 
-                box(width = 6, 
-                    p("Chartist - Bar"), 
-                    chartistOutput("chartist1")
+                box(width = 6,
+                    p("Chartist - Bar"),
+                    chartistOutput("chartist1", height = "350px")
                 ),
                 
                 box(width = 6, 
                     p("Chartist - Line"), 
-                    chartistOutput("chartist2")
+                    chartistOutput("chartist2", height = "350px")
+                ),
+                
+                box(width = 6, height = "320px",
+                    p("Chartist - Pie"), 
+                    chartistOutput("chartist3", height = "250px")
+                ),
+                
+                box(width = 6, height = "320px",
+                    p("Chartist - Point"), 
+                    chartistOutput("chartist4", height = "250px")
                 )
+                
             )
         ),
 
@@ -70,34 +84,36 @@ body <- dashboardBody(
             fluidRow(
 
                 setShadow("box"),
-                valueBox(10, "Hi!", icon = icon("tv"), color = "navy"),
-                valueBox(20, "Hi!", color = "navy", icon = icon("calendar")),
-                valueBox(30, "Hi!", color = "navy", icon = icon("apple")),
+                valueBox(10, "Hi!", icon = icon("tv"), color = "navy"), 
+                valueBox(20, "Hi!", color = "navy", icon = icon("calendar")), 
+                valueBox(30, "Hi!", color = "navy", icon = icon("apple")), 
 
                 box(
                     width = 12,
                     background = "light-blue",
                     p("This is content. The background color is set to light-blue")
                 ),
-
-                widgetUserBox(
-                    title = "Nathália Campos",
-                    subtitle = "R Developer",
-                    type = 2,
-                    src = "https://adminlte.io/themes/AdminLTE/dist/img/user7-128x128.jpg",
-                    color = "yellow",
-                    "Some text here!",
-                    footer = "The footer here!"
+                fluidRow(
+                    widgetUserBox(
+                        title = "Nathália Campos",
+                        subtitle = "R Developer",
+                        type = 2,
+                        src = "https://adminlte.io/themes/AdminLTE/dist/img/user7-128x128.jpg",
+                        color = "yellow",
+                        "Some text here!",
+                        footer = "The footer here!"
+                    ),
+                    
+                    widgetUserBox(
+                        title = "Alexander Pierce",
+                        subtitle = "Founder & CEO",
+                        type = NULL,
+                        src = "https://adminlte.io/themes/AdminLTE/dist/img/user1-128x128.jpg",
+                        color = "aqua-active",
+                        "Some text here!"
+                    )
                 ),
-
-                widgetUserBox(
-                    title = "Alexander Pierce",
-                    subtitle = "Founder & CEO",
-                    type = NULL,
-                    src = "https://adminlte.io/themes/AdminLTE/dist/img/user1-128x128.jpg",
-                    color = "aqua-active",
-                    "Some text here!"
-                ),
+                
 
                 box(
                     solidHeader = FALSE,

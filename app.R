@@ -1,3 +1,3 @@
 library(shiny)
 
-runApp("App1")
+runApp("shiny_app.R")
