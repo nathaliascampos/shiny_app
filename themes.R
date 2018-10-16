@@ -1,4 +1,431 @@
-### CUSTOMIZADOS
+# Cor 4I: "rgb(27, 53, 119)" to "rgb(136, 168, 234)"
+
+# ---- MEUS ----
+
+### my_blue ---------------------------------------------------
+my_blue <- shinyDashboardThemeDIY(
+    
+    ### general
+    appFontFamily = "Arial" 
+    ,appFontColor = "rgb(0,0,0)" 
+    ,bodyBackColor = "rgb(255,255,255)"
+    
+    ### header
+    ,logoBackColor = "rgb(255,255,255)" 
+    
+    ,headerButtonBackColor = "rgb(255,255,255)" 
+    ,headerButtonIconColor = "rgb(0,0,0)" 
+    ,headerButtonBackColorHover = "rgb(255,255,255)" 
+    ,headerButtonIconColorHover = "rgb(0,0,0)" 
+    
+    ,headerBackColor = "rgb(255,255,255)" 
+    ,headerBoxShadowColor = ""
+    ,headerBoxShadowSize = "0px 0px 0px"
+    
+    ### sidebar
+    ,sidebarBackColor = "rgb(255,255,255)"
+    
+    ,sidebarShadowRadius = ""
+    ,sidebarPadding = 10
+    ,sidebarShadowColor = "0px 0px 0px"
+    
+    ,sidebarMenuBackColor = "rgb(27, 53, 119)"
+   
+    ,sidebarMenuPadding = 5
+    ,sidebarMenuBorderRadius = 20
+    
+    ,sidebarUserTextColor = "rgb(128,177,221)"
+    
+    ,sidebarSearchBackColor = "rgb(40,70,115)"
+    ,sidebarSearchIconColor = "rgb(50,115,145)"
+    ,sidebarSearchBorderColor = "rgb(30,60,105)"
+    
+    ,sidebarTabTextColor = "rgb(128,177,221)"
+    ,sidebarTabTextSize = 13
+    ,sidebarTabBorderStyle = "none"
+    ,sidebarTabBorderColor = "none"
+    ,sidebarTabBorderWidth = 0
+    
+    ,sidebarTabBackColorSelected = cssGradientThreeColors(
+        direction = "right"
+        ,colorStart = "rgb(56,137,189)"
+        ,colorMiddle = "rgb(65,95,145)"
+        ,colorEnd = "rgb(68,84,137)"
+        ,colorStartPos = 0
+        ,colorMiddlePos = 50
+        ,colorEndPos = 100
+    )
+    ,sidebarTabTextColorSelected = "rgb(255,255,255)"
+    ,sidebarTabRadiusSelected = "30px"
+    
+    ,sidebarTabBackColorHover = cssGradientThreeColors(
+        direction = "right"
+        ,colorStart = "rgb(56,137,189)"
+        ,colorMiddle = "rgb(65,95,145)"
+        ,colorEnd = "rgb(68,84,137)"
+        ,colorStartPos = 0
+        ,colorMiddlePos = 50
+        ,colorEndPos = 100
+    )
+    ,sidebarTabTextColorHover = "rgb(255,255,255)"
+    ,sidebarTabBorderStyleHover = "none"
+    ,sidebarTabBorderColorHover = "none"
+    ,sidebarTabBorderWidthHover = 0
+    ,sidebarTabRadiusHover = "30px"
+    
+    ### boxes
+    ,boxBackColor = "rgba(255,255,255,0)"
+    ,boxBorderRadius = 15
+    ,boxShadowSize = "0px 0px 0px"
+    ,boxShadowColor = ""
+    ,boxTitleSize = 16
+    ,boxDefaultColor = "rgb(49,56,107)"
+    ,boxPrimaryColor = "rgb(141,192,241)"
+    ,boxSuccessColor = "rgb(64,186,170)"
+    ,boxWarningColor = "rgb(255,217,144)"
+    ,boxDangerColor = "rgb(249,144,144)"
+    
+    ,tabBoxTabColor = "rgb(80,95,155)"
+    ,tabBoxTabTextSize = 14
+    ,tabBoxTabTextColor = "rgb(128,177,221)"
+    ,tabBoxTabTextColorSelected = "rgb(255,255,255)"
+    
+    ,tabBoxBackColor = cssGradientThreeColors(
+        direction = "right"
+        ,colorStart = "rgb(70,75,125)"
+        ,colorMiddle = "rgb(65,79,129)"
+        ,colorEnd = "rgb(55,70,120)"
+        ,colorStartPos = 0
+        ,colorMiddlePos = 30
+        ,colorEndPos = 100
+    )
+    ,tabBoxHighlightColor = "rgb(80,95,155)"
+    ,tabBoxBorderRadius = 15
+    
+    ### inputs
+    
+    ,buttonBackColor = "rgb(245,245,245)"
+    ,buttonTextColor = "rgb(0,0,0)"
+    ,buttonBorderColor = "rgb(200,200,200)"
+    ,buttonBorderRadius = 15
+    
+    ,buttonBackColorHover = "rgb(235,235,235)"
+    ,buttonTextColorHover = "rgb(100,100,100)"
+    ,buttonBorderColorHover = "rgb(200,200,200)"
+    
+    ,textboxBackColor = "rgb(40,70,115)"
+    ,textboxBorderColor = "rgb(30,60,105)"
+    ,textboxBorderRadius = 20
+    ,textboxBackColorSelect = "rgb(40,70,115)"
+    ,textboxBorderColorSelect = "rgb(30,60,105)"
+    
+    ### tables
+    ,tableBackColor = "transparent"
+    ,tableBorderColor = "rgb(80,95,155)"
+    ,tableBorderTopSize = 1
+    ,tableBorderRowSize = 1
+    
+)
+
+### black ---------------------------------------------------
+black <- shinyDashboardThemeDIY(
+    
+    # "rgb(29,30,46)" -> azul fundo box
+    # "rgb(40,41,61)" -> azul fundo box
+    
+    # "rgb(29,139,247)" -> degrade sidebar
+    # "rgb(28,128,247)" to "rgb(42,126,246)" to "rgb(61,121,244)" -> degrade sidebar
+    
+    ### general
+    appFontFamily = "Arial" 
+    ,appFontColor = "rgb(255,255,255)" 
+    ,bodyBackColor = "rgb(29,30,46)"
+    
+    ### header
+    ,logoBackColor = "rgb(29,30,46)" 
+    
+    ,headerButtonBackColor = "rgb(29,30,46)" 
+    ,headerButtonIconColor = "rgb(0,0,0)" 
+    ,headerButtonBackColorHover = "rgb(255,255,255)" 
+    ,headerButtonIconColorHover = "rgb(0,0,0)" 
+    
+    ,headerBackColor = "rgb(29,30,46)" # 
+    ,headerBoxShadowColor = ""
+    ,headerBoxShadowSize = "0px 0px 0px"
+    
+    ### sidebar
+    ,sidebarBackColor = "rgb(29,30,46)"
+    
+    ,sidebarShadowRadius = ""
+    ,sidebarPadding = 10
+    ,sidebarShadowColor = "0px 0px 0px"
+    
+    # ,sidebarMenuBackColor = "rgb(27, 53, 119)"
+    ,sidebarMenuBackColor = cssGradientThreeColors(
+        direction = "down"
+        ,colorStart = "rgb(29,139,247)"
+        ,colorMiddle = "rgb(42,126,246)"
+        ,colorEnd = "rgb(61,121,244)"
+        ,colorStartPos = 0
+        ,colorMiddlePos = 50
+        ,colorEndPos = 100
+    )
+    
+    ,sidebarMenuPadding = 5
+    ,sidebarMenuBorderRadius = 5
+    
+    ,sidebarUserTextColor = "rgb(128,177,221)"
+    
+    ,sidebarSearchBackColor = "rgb(40,70,115)"
+    ,sidebarSearchIconColor = "rgb(50,115,145)"
+    ,sidebarSearchBorderColor = "rgb(30,60,105)"
+    
+    ,sidebarTabTextColor = "rgb(128,177,221)"
+    ,sidebarTabTextSize = 13
+    ,sidebarTabBorderStyle = "none"
+    ,sidebarTabBorderColor = "none"
+    ,sidebarTabBorderWidth = 0
+    
+    ,sidebarTabBackColorSelected = cssGradientThreeColors(
+        direction = "right"
+        ,colorStart = "rgb(56,137,189)"
+        ,colorMiddle = "rgb(65,95,145)"
+        ,colorEnd = "rgb(68,84,137)"
+        ,colorStartPos = 0
+        ,colorMiddlePos = 50
+        ,colorEndPos = 100
+    )
+    ,sidebarTabTextColorSelected = "rgb(255,255,255)"
+    ,sidebarTabRadiusSelected = "30px"
+    
+    ,sidebarTabBackColorHover = cssGradientThreeColors(
+        direction = "right"
+        ,colorStart = "rgb(56,137,189)"
+        ,colorMiddle = "rgb(65,95,145)"
+        ,colorEnd = "rgb(68,84,137)"
+        ,colorStartPos = 0
+        ,colorMiddlePos = 50
+        ,colorEndPos = 100
+    )
+    ,sidebarTabTextColorHover = "rgb(255,255,255)"
+    ,sidebarTabBorderStyleHover = "none"
+    ,sidebarTabBorderColorHover = "none"
+    ,sidebarTabBorderWidthHover = 0
+    ,sidebarTabRadiusHover = "30px"
+    
+    ### boxes
+    ,boxBackColor = "rgba(40,41,61, 0.5)" # "rgba(0,0,0,0.05)"
+    ,boxBorderRadius = 5
+    ,boxShadowSize = "0px 0px 0px"
+    ,boxShadowColor = ""
+    ,boxTitleSize = 16
+    ,boxDefaultColor = "rgba(0,0,0,0.1)" # "rgb(49,56,107)"
+    ,boxPrimaryColor = "rgb(141,192,241)"
+    ,boxSuccessColor = "rgb(64,186,170)"
+    ,boxWarningColor = "rgb(255,217,144)"
+    ,boxDangerColor = "rgb(249,144,144)"
+    
+    ,tabBoxTabColor = "rgb(80,95,155)"
+    ,tabBoxTabTextSize = 14
+    ,tabBoxTabTextColor = "rgb(128,177,221)"
+    ,tabBoxTabTextColorSelected = "rgb(255,255,255)"
+    
+    ,tabBoxBackColor = cssGradientThreeColors(
+        direction = "right"
+        ,colorStart = "rgb(70,75,125)"
+        ,colorMiddle = "rgb(65,79,129)"
+        ,colorEnd = "rgb(55,70,120)"
+        ,colorStartPos = 0
+        ,colorMiddlePos = 30
+        ,colorEndPos = 100
+    )
+    ,tabBoxHighlightColor = "rgb(80,95,155)"
+    ,tabBoxBorderRadius = 15
+    
+    ### inputs
+    
+    ,buttonBackColor = "rgb(245,245,245)"
+    ,buttonTextColor = "rgb(0,0,0)"
+    ,buttonBorderColor = "rgb(200,200,200)"
+    ,buttonBorderRadius = 15
+    
+    ,buttonBackColorHover = "rgb(235,235,235)"
+    ,buttonTextColorHover = "rgb(100,100,100)"
+    ,buttonBorderColorHover = "rgb(200,200,200)"
+    
+    ,textboxBackColor = "rgb(40,70,115)"
+    ,textboxBorderColor = "rgb(30,60,105)"
+    ,textboxBorderRadius = 20
+    ,textboxBackColorSelect = "rgb(40,70,115)"
+    ,textboxBorderColorSelect = "rgb(30,60,105)"
+    
+    ### tables
+    ,tableBackColor = "transparent"
+    ,tableBorderColor = "rgb(80,95,155)"
+    ,tableBorderTopSize = 1
+    ,tableBorderRowSize = 1
+    
+)
+# ------------------------
+### ---- CUSTOMIZADOS ----
+
+### my_purple_gradient ---------------------------------------------------
+my_purple_gradient <- shinyDashboardThemeDIY(
+    
+    ### general
+    appFontFamily = "Arial" # Poppins - tentar colocar essa
+    ,appFontColor = "rgb(128,177,221)"
+    ,bodyBackColor = "rgb(255,255,255)"
+    
+    ### header
+    ,logoBackColor = "rgb(255,255,255)" # ,logoBackColor = "rgb(49,56,107)"
+    
+    ,headerButtonBackColor = "rgb(255,255,255)" # ,headerButtonBackColor = "rgb(49,56,107)"
+    ,headerButtonIconColor = "rgb(0,0,0)" # ,headerButtonIconColor = "rgb(62,133,179)"
+    ,headerButtonBackColorHover = "rgb(255,255,255)" # ,headerButtonBackColorHover = "rgb(49,56,107)"
+    ,headerButtonIconColorHover = "rgb(0,0,0)" # ,headerButtonIconColorHover = "rgb(255,255,255)"
+    
+    ,headerBackColor = "rgb(255,255,255)" # ,headerBackColor = "rgb(49,56,107)"
+    ,headerBoxShadowColor = ""
+    ,headerBoxShadowSize = "0px 0px 0px"
+    
+    ### sidebar
+    ,sidebarBackColor = "rgb(255,255,255)"
+    # ,sidebarBackColor = cssGradientThreeColors(
+    #     direction = "down"
+    #     ,colorStart = "rgb(49,56,107)"
+    #     ,colorMiddle = "rgb(71,59,109)"
+    #     ,colorEnd = "rgb(78,88,149)"
+    #     ,colorStartPos = 0
+    #     ,colorMiddlePos = 70
+    #     ,colorEndPos = 100
+    # )
+    
+    ,sidebarShadowRadius = ""
+    ,sidebarPadding = 10
+    ,sidebarShadowColor = "0px 0px 0px"
+    
+    ,sidebarMenuBackColor = "rgb(27, 53, 119)"
+    # ,sidebarMenuBackColor = cssGradientThreeColors(
+    #     direction = "right"
+    #     ,colorStart = "rgb(48,103,157)" # "rgb(33,135,247)" 
+    #     ,colorMiddle = "rgb(65,79,129)" # "rgb(51,125,246)" 
+    #     ,colorEnd = "rgb(55,70,120)" # "rgb(61,121,244)"
+    #     ,colorStartPos = 0
+    #     ,colorMiddlePos = 30
+    #     ,colorEndPos = 100
+    # )
+    ,sidebarMenuPadding = 5
+    ,sidebarMenuBorderRadius = 20
+    
+    ,sidebarUserTextColor = "rgb(128,177,221)"
+    
+    ,sidebarSearchBackColor = "rgb(40,70,115)"
+    ,sidebarSearchIconColor = "rgb(50,115,145)"
+    ,sidebarSearchBorderColor = "rgb(30,60,105)"
+    
+    ,sidebarTabTextColor = "rgb(128,177,221)"
+    ,sidebarTabTextSize = 13
+    ,sidebarTabBorderStyle = "none"
+    ,sidebarTabBorderColor = "none"
+    ,sidebarTabBorderWidth = 0
+    
+    ,sidebarTabBackColorSelected = cssGradientThreeColors(
+        direction = "right"
+        ,colorStart = "rgb(56,137,189)"
+        ,colorMiddle = "rgb(65,95,145)"
+        ,colorEnd = "rgb(68,84,137)"
+        ,colorStartPos = 0
+        ,colorMiddlePos = 50
+        ,colorEndPos = 100
+    )
+    ,sidebarTabTextColorSelected = "rgb(255,255,255)"
+    ,sidebarTabRadiusSelected = "30px"
+    
+    ,sidebarTabBackColorHover = cssGradientThreeColors(
+        direction = "right"
+        ,colorStart = "rgb(56,137,189)"
+        ,colorMiddle = "rgb(65,95,145)"
+        ,colorEnd = "rgb(68,84,137)"
+        ,colorStartPos = 0
+        ,colorMiddlePos = 50
+        ,colorEndPos = 100
+    )
+    ,sidebarTabTextColorHover = "rgb(255,255,255)"
+    ,sidebarTabBorderStyleHover = "none"
+    ,sidebarTabBorderColorHover = "none"
+    ,sidebarTabBorderWidthHover = 0
+    ,sidebarTabRadiusHover = "30px"
+    
+    ### boxes
+    ,boxBackColor = "rgba(255,255,255,0)"
+    # ,boxBackColor = cssGradientThreeColors(
+    #     direction = "right"
+    #     ,colorStart = "rgb(70,75,125)"
+    #     ,colorMiddle = "rgb(65,79,129)"
+    #     ,colorEnd = "rgb(55,70,120)"
+    #     ,colorStartPos = 0
+    #     ,colorMiddlePos = 30
+    #     ,colorEndPos = 100
+    # )
+    ,boxBorderRadius = 15
+    ,boxShadowSize = "0px 0px 0px"
+    ,boxShadowColor = ""
+    ,boxTitleSize = 16
+    ,boxDefaultColor = "rgb(49,56,107)"
+    ,boxPrimaryColor = "rgb(141,192,241)"
+    ,boxSuccessColor = "rgb(64,186,170)"
+    ,boxWarningColor = "rgb(255,217,144)"
+    ,boxDangerColor = "rgb(249,144,144)"
+    
+    ,tabBoxTabColor = "rgb(80,95,155)"
+    ,tabBoxTabTextSize = 14
+    ,tabBoxTabTextColor = "rgb(128,177,221)"
+    ,tabBoxTabTextColorSelected = "rgb(255,255,255)"
+    
+    ,tabBoxBackColor = cssGradientThreeColors(
+        direction = "right"
+        ,colorStart = "rgb(70,75,125)"
+        ,colorMiddle = "rgb(65,79,129)"
+        ,colorEnd = "rgb(55,70,120)"
+        ,colorStartPos = 0
+        ,colorMiddlePos = 30
+        ,colorEndPos = 100
+    )
+    ,tabBoxHighlightColor = "rgb(80,95,155)"
+    ,tabBoxBorderRadius = 15
+    
+    ### inputs
+    
+    ,buttonBackColor = "rgb(245,245,245)"
+    ,buttonTextColor = "rgb(0,0,0)"
+    ,buttonBorderColor = "rgb(200,200,200)"
+    ,buttonBorderRadius = 15
+    # ,buttonBackColor = "rgb(72,190,229)"
+    # ,buttonTextColor = "rgb(40,63,106)"
+    # ,buttonBorderColor = "rgb(72,190,229)"
+    # ,buttonBorderRadius = 20
+    
+    ,buttonBackColorHover = "rgb(235,235,235)"
+    ,buttonTextColorHover = "rgb(100,100,100)"
+    ,buttonBorderColorHover = "rgb(200,200,200)"
+    # ,buttonBackColorHover = "rgb(115,210,240)"
+    # ,buttonTextColorHover = "rgb(255,255,255)"
+    # ,buttonBorderColorHover = "rgb(115,210,240)"
+    
+    ,textboxBackColor = "rgb(40,70,115)"
+    ,textboxBorderColor = "rgb(30,60,105)"
+    ,textboxBorderRadius = 20
+    ,textboxBackColorSelect = "rgb(40,70,115)"
+    ,textboxBorderColorSelect = "rgb(30,60,105)"
+    
+    ### tables
+    ,tableBackColor = "transparent"
+    ,tableBorderColor = "rgb(80,95,155)"
+    ,tableBorderTopSize = 1
+    ,tableBorderRowSize = 1
+    
+)
 
 ### my_blue_gradient ---------------------------------------------------
 my_blue_gradient <- shinyDashboardThemeDIY(
@@ -220,177 +647,11 @@ my_grey_dark <- shinyDashboardThemeDIY(
     
 )
 
-### my_purple_gradient ---------------------------------------------------
-my_purple_gradient <- shinyDashboardThemeDIY(
-    
-    ### general
-    appFontFamily = "Arial" # Poppins - tentar colocar essa
-    ,appFontColor = "rgb(128,177,221)"
-    ,bodyBackColor = "rgb(255,255,255)"
-    # ,bodyBackColor = cssGradientThreeColors(
-    #     direction = "down"
-    #     ,colorStart = "rgb(49,56,107)"
-    #     ,colorMiddle = "rgb(71,59,109)"
-    #     ,colorEnd = "rgb(78,88,149)"
-    #     ,colorStartPos = 0
-    #     ,colorMiddlePos = 70
-    #     ,colorEndPos = 100
-    # )
-    
-    ### header
-    ,logoBackColor = "rgb(255,255,255)" # ,logoBackColor = "rgb(49,56,107)"
-    
-    ,headerButtonBackColor = "rgb(255,255,255)" # ,headerButtonBackColor = "rgb(49,56,107)"
-    ,headerButtonIconColor = "rgb(0,0,0)" # ,headerButtonIconColor = "rgb(62,133,179)"
-    ,headerButtonBackColorHover = "rgb(255,255,255)" # ,headerButtonBackColorHover = "rgb(49,56,107)"
-    ,headerButtonIconColorHover = "rgb(0,0,0)" # ,headerButtonIconColorHover = "rgb(255,255,255)"
-    
-    ,headerBackColor = "rgb(255,255,255)" # ,headerBackColor = "rgb(49,56,107)"
-    ,headerBoxShadowColor = ""
-    ,headerBoxShadowSize = "0px 0px 0px"
-    
-    ### sidebar
-    ,sidebarBackColor = "rgb(255,255,255)"
-    # ,sidebarBackColor = cssGradientThreeColors(
-    #     direction = "down"
-    #     ,colorStart = "rgb(49,56,107)"
-    #     ,colorMiddle = "rgb(71,59,109)"
-    #     ,colorEnd = "rgb(78,88,149)"
-    #     ,colorStartPos = 0
-    #     ,colorMiddlePos = 70
-    #     ,colorEndPos = 100
-    # )
-    
-    ,sidebarShadowRadius = ""
-    ,sidebarPadding = 10
-    ,sidebarShadowColor = "0px 0px 0px"
-    
-    # ,sidebarMenuBackColor = cssGradientThreeColors(
-    #     direction = "down"
-    #     ,colorStart = "rgb(33,135,247)" 
-    #     ,colorMiddle = "rgb(51,125,246)" 
-    #     ,colorEnd = "rgb(61,121,244)"
-    #     ,colorStartPos = 0
-    #     ,colorMiddlePos = 30
-    #     ,colorEndPos = 100
-    # )
-    ,sidebarMenuBackColor = cssGradientThreeColors(
-        direction = "right"
-        ,colorStart = "rgb(48,103,157)"
-        ,colorMiddle = "rgb(65,79,129)"
-        ,colorEnd = "rgb(55,70,120)"
-        ,colorStartPos = 0
-        ,colorMiddlePos = 30
-        ,colorEndPos = 100
-    )
-    ,sidebarMenuPadding = 5
-    ,sidebarMenuBorderRadius = 20
-    
-    ,sidebarUserTextColor = "rgb(128,177,221)"
-    
-    ,sidebarSearchBackColor = "rgb(40,70,115)"
-    ,sidebarSearchIconColor = "rgb(50,115,145)"
-    ,sidebarSearchBorderColor = "rgb(30,60,105)"
-    
-    ,sidebarTabTextColor = "rgb(128,177,221)"
-    ,sidebarTabTextSize = 13
-    ,sidebarTabBorderStyle = "none"
-    ,sidebarTabBorderColor = "none"
-    ,sidebarTabBorderWidth = 0
-    
-    ,sidebarTabBackColorSelected = cssGradientThreeColors(
-        direction = "right"
-        ,colorStart = "rgb(56,137,189)"
-        ,colorMiddle = "rgb(65,95,145)"
-        ,colorEnd = "rgb(68,84,137)"
-        ,colorStartPos = 0
-        ,colorMiddlePos = 50
-        ,colorEndPos = 100
-    )
-    ,sidebarTabTextColorSelected = "rgb(255,255,255)"
-    ,sidebarTabRadiusSelected = "30px"
-    
-    ,sidebarTabBackColorHover = cssGradientThreeColors(
-        direction = "right"
-        ,colorStart = "rgb(56,137,189)"
-        ,colorMiddle = "rgb(65,95,145)"
-        ,colorEnd = "rgb(68,84,137)"
-        ,colorStartPos = 0
-        ,colorMiddlePos = 50
-        ,colorEndPos = 100
-    )
-    ,sidebarTabTextColorHover = "rgb(255,255,255)"
-    ,sidebarTabBorderStyleHover = "none"
-    ,sidebarTabBorderColorHover = "none"
-    ,sidebarTabBorderWidthHover = 0
-    ,sidebarTabRadiusHover = "30px"
-    
-    ### boxes
-    ,boxBackColor = "rgba(255,255,255,0)"
-    # ,boxBackColor = cssGradientThreeColors(
-    #     direction = "right"
-    #     ,colorStart = "rgb(70,75,125)"
-    #     ,colorMiddle = "rgb(65,79,129)"
-    #     ,colorEnd = "rgb(55,70,120)"
-    #     ,colorStartPos = 0
-    #     ,colorMiddlePos = 30
-    #     ,colorEndPos = 100
-    # )
-    ,boxBorderRadius = 15
-    ,boxShadowSize = "0px 0px 0px"
-    ,boxShadowColor = ""
-    ,boxTitleSize = 16
-    ,boxDefaultColor = "rgb(49,56,107)"
-    ,boxPrimaryColor = "rgb(141,192,241)"
-    ,boxSuccessColor = "rgb(64,186,170)"
-    ,boxWarningColor = "rgb(255,217,144)"
-    ,boxDangerColor = "rgb(249,144,144)"
-    
-    ,tabBoxTabColor = "rgb(80,95,155)"
-    ,tabBoxTabTextSize = 14
-    ,tabBoxTabTextColor = "rgb(128,177,221)"
-    ,tabBoxTabTextColorSelected = "rgb(255,255,255)"
-    
-    ,tabBoxBackColor = cssGradientThreeColors(
-        direction = "right"
-        ,colorStart = "rgb(70,75,125)"
-        ,colorMiddle = "rgb(65,79,129)"
-        ,colorEnd = "rgb(55,70,120)"
-        ,colorStartPos = 0
-        ,colorMiddlePos = 30
-        ,colorEndPos = 100
-    )
-    ,tabBoxHighlightColor = "rgb(80,95,155)"
-    ,tabBoxBorderRadius = 15
-    
-    ### inputs
-    ,buttonBackColor = "rgb(72,190,229)"
-    ,buttonTextColor = "rgb(40,63,106)"
-    ,buttonBorderColor = "rgb(72,190,229)"
-    ,buttonBorderRadius = 20
-    
-    ,buttonBackColorHover = "rgb(115,210,240)"
-    ,buttonTextColorHover = "rgb(255,255,255)"
-    ,buttonBorderColorHover = "rgb(115,210,240)"
-    
-    ,textboxBackColor = "rgb(40,70,115)"
-    ,textboxBorderColor = "rgb(30,60,105)"
-    ,textboxBorderRadius = 20
-    ,textboxBackColorSelect = "rgb(40,70,115)"
-    ,textboxBorderColorSelect = "rgb(30,60,105)"
-    
-    ### tables
-    ,tableBackColor = "transparent"
-    ,tableBorderColor = "rgb(80,95,155)"
-    ,tableBorderTopSize = 1
-    ,tableBorderRowSize = 1
-    
-)
 
 
 
-
-### ORIGINAIS --------
+# ---------------------
+### ---- ORIGINAIS ----
 
 ### theme_blue_gradient ---------------------------------------------------
 theme_blue_gradient <- shinyDashboardThemeDIY(
@@ -761,6 +1022,104 @@ theme_purple_gradient <- shinyDashboardThemeDIY(
     ### tables
     ,tableBackColor = "transparent"
     ,tableBorderColor = "rgb(80,95,155)"
+    ,tableBorderTopSize = 1
+    ,tableBorderRowSize = 1
+    
+)
+
+
+### theme_grey_light ----
+theme_grey_light <- shinyDashboardThemeDIY(
+    
+    ### general
+    appFontFamily = "Arial"
+    ,appFontColor = "rgb(45,45,45)"
+    ,bodyBackColor = "rgb(240,240,240)"
+    
+    ### header
+    ,logoBackColor = "rgb(120,120,120)"
+    
+    ,headerButtonBackColor = "rgb(120,120,120)"
+    ,headerButtonIconColor = "rgb(220,220,220)"
+    ,headerButtonBackColorHover = "rgb(100,100,100)"
+    ,headerButtonIconColorHover = "rgb(60,60,60)"
+    
+    ,headerBackColor = "rgb(120,120,120)"
+    ,headerBoxShadowColor = "#dfdfdf"
+    ,headerBoxShadowSize = "3px 5px 5px"
+    
+    ### sidebar
+    ,sidebarBackColor = "rgb(255,255,255)"
+    ,sidebarPadding = 0
+    
+    ,sidebarMenuBackColor = "transparent"
+    ,sidebarMenuPadding = 0
+    ,sidebarMenuBorderRadius = 0
+    
+    ,sidebarShadowRadius = "3px 5px 5px"
+    ,sidebarShadowColor = "#dfdfdf"
+    
+    ,sidebarUserTextColor = "rgb(115,115,115)"
+    
+    ,sidebarSearchBackColor = "rgb(240,240,240)"
+    ,sidebarSearchIconColor = "rgb(100,100,100)"
+    ,sidebarSearchBorderColor = "rgb(220,220,220)"
+    
+    ,sidebarTabTextColor = "rgb(100,100,100)"
+    ,sidebarTabTextSize = 14
+    ,sidebarTabBorderStyle = "none"
+    ,sidebarTabBorderColor = "none"
+    ,sidebarTabBorderWidth = 0
+    
+    ,sidebarTabBackColorSelected = "rgb(230,230,230)"
+    ,sidebarTabTextColorSelected = "rgb(0,0,0)"
+    ,sidebarTabRadiusSelected = "0px"
+    
+    ,sidebarTabBackColorHover = "rgb(245,245,245)"
+    ,sidebarTabTextColorHover = "rgb(0,0,0)"
+    ,sidebarTabBorderStyleHover = "none solid none none"
+    ,sidebarTabBorderColorHover = "rgb(200,200,200)"
+    ,sidebarTabBorderWidthHover = 4
+    ,sidebarTabRadiusHover = "0px"
+    
+    ,boxBackColor = "rgb(248,248,248)"
+    ,boxBorderRadius = 5
+    ,boxShadowSize = "none"
+    ,boxShadowColor = ""
+    ,boxTitleSize = 18
+    ,boxDefaultColor = "rgb(225,225,225)"
+    ,boxPrimaryColor = "rgb(95,155,213)"
+    ,boxSuccessColor = "rgb(112,173,71)"
+    ,boxWarningColor = "rgb(237,125,49)"
+    ,boxDangerColor = "rgb(232,76,34)"
+    
+    ,tabBoxTabColor = "rgb(248,248,248)"
+    ,tabBoxTabTextSize = 14
+    ,tabBoxTabTextColor = "rgb(100,100,100)"
+    ,tabBoxTabTextColorSelected = "rgb(45,45,45)"
+    ,tabBoxBackColor = "rgb(248,248,248)"
+    ,tabBoxHighlightColor = "rgb(200,200,200)"
+    ,tabBoxBorderRadius = 5
+    
+    ### inputs
+    ,buttonBackColor = "rgb(215,215,215)"
+    ,buttonTextColor = "rgb(45,45,45)"
+    ,buttonBorderColor = "rgb(150,150,150)"
+    ,buttonBorderRadius = 5
+    
+    ,buttonBackColorHover = "rgb(190,190,190)"
+    ,buttonTextColorHover = "rgb(0,0,0)"
+    ,buttonBorderColorHover = "rgb(150,150,150)"
+    
+    ,textboxBackColor = "rgb(255,255,255)"
+    ,textboxBorderColor = "rgb(118,118,118)"
+    ,textboxBorderRadius = 5
+    ,textboxBackColorSelect = "rgb(245,245,245)"
+    ,textboxBorderColorSelect = "rgb(108,108,108)"
+    
+    ### tables
+    ,tableBackColor = "rgb(248,248,248)"
+    ,tableBorderColor = "rgb(238,238,238)"
     ,tableBorderTopSize = 1
     ,tableBorderRowSize = 1
     

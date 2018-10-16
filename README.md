@@ -22,10 +22,18 @@ Para instalar, é necessário rodar:
 * shinyWidgets
 * plotly
 * chartist
+* chartjs
+* stringr
+* highcharter
 
 -------------------------
 
 ### Tipos de gráficos: 
+
+* ChartJS
+
+http://tutuchan.github.io/chartjs/index.html
+https://github.com/Tutuchan/chartjs/blob/master/inst/example.Rmd
 
 * Plotly
 

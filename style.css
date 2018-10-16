@@ -1,10 +1,22 @@
 
-/* Mudar isso no theme e remover daqui*/
+/* Escrito onde fica o logo - Mudar isso no theme e remover daqui 
 span.logo {
     color: rgb(0, 0, 0) !important;
+}*/
+
+h5{
+    opacity: 0;
 }
 
-/* tentar mudar isso no theme e remover daqui*/
-p {
-    color: #000 !important;
+/* Colocar group buttum para a direita */
+.btn-group.btn-group-justified.btn-group-container-sw {
+    width: 25%;
+    position: absolute;
+    right: 12px;
+    margin-bottom: 10px;
 }
+
+ul.sidebar-menu {
+    margin-top: 16px;
+}
+
